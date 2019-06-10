@@ -3,9 +3,7 @@ package com.casper.LibraryManagementSystem.web.service;
 import com.casper.LibraryManagementSystem.business.domain.UserAccount;
 import com.casper.LibraryManagementSystem.business.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,4 +20,8 @@ public class AccountServiceController {
     }
 
 
+    @PostMapping(path = "/accounts")
+    public UserAccount newUserAccount(@RequestBody UserAccount userAccount){
+        return accountService.addNewUserAccount(userAccount);
+    }
 }

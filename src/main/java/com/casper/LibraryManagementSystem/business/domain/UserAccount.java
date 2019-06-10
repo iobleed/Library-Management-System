@@ -1,9 +1,7 @@
 package com.casper.LibraryManagementSystem.business.domain;
 
-enum ACCOUNT_TYPE {
-    MEMBER,
-    LIBRARIAN
-}
+
+import com.casper.LibraryManagementSystem.data.dataStructure.Enums.ACCOUNT_TYPE;
 
 public class UserAccount {
     private long id;

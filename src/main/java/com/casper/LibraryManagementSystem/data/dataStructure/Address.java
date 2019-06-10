@@ -1,4 +1,4 @@
-package com.casper.LibraryManagementSystem.data.data_structure;
+package com.casper.LibraryManagementSystem.data.dataStructure;
 
 public class Address {
 

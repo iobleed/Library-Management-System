@@ -21,11 +21,13 @@
     <table>
         <tr>
             <td>Id</td>
-            <td>User</td>
+            <td>Account Type</td>
+            <td>User Id</td>
             <td>Password</td>
         </tr>
         <tr th:each = "userAccount: ${userAccounts}">
             <td th:text = "${userAccount.id}">ID</td>
+            <td th:text = "${userAccount.accountType}">Account Type</td>
             <td th:text = "${userAccount.userId}">User ID</td>
             <td th:text = "${userAccount.password}">Password</td>
         </tr>

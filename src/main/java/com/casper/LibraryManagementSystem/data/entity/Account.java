@@ -1,7 +1,7 @@
 package com.casper.LibraryManagementSystem.data.entity;
 
 
-//import com.casper.LibraryManagementSystem.data.data_structure.Person;
+//import com.casper.LibraryManagementSystem.data.dataStructure.Person;
 
 import javax.persistence.*;
 
