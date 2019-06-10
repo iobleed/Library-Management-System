@@ -4,7 +4,15 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "MEMBER")
-public class Member extends User {
+public class Member extends Account {
 
+    private int totalBooksCheckedout;
+
+    public int getTotalBooksCheckedout() {
+        return totalBooksCheckedout;
+    }
+
+    public void setTotalBooksCheckedout(int totalBooksCheckedout) {
+        this.totalBooksCheckedout = totalBooksCheckedout;
+    }
 }
